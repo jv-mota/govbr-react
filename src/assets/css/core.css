@@ -31324,7 +31324,7 @@ hr {
     --header-logo-mobile-width: 80px;
     --header-logo-mobile-height: 40px;
     background: var(--background);
-    box-shadow: var(--surface-shadow-sm);
+    /* box-shadow: var(--surface-shadow-sm); */
     display: flex;
     padding: var(--header-padding) 0;
     position: relative;

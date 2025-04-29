@@ -1,8 +1,10 @@
 import { useEffect } from 'react';
-import BRMenu from '../assets/js/BRMenu.js';
-import BRHeader from '../assets/js/BRHeader.js';
-import '../assets/css/core.css';
-import GTranslate from './Gtranslate.jsx';
+import BRMenu from '../../assets/js/BRMenu.js';
+import BRHeader from '../../assets/js/BRHeader.js';
+import '../../assets/css/core.css';
+import GTranslate from '../Gtranslate/Gtranslate.jsx';
+import LogoGov from "../../img/govbr-logo.png";
+
 
 const Header = () => {
     useEffect(() => {
@@ -32,13 +34,13 @@ const Header = () => {
             {/* Header GOV.BR */}
             <header className="br-header" id="header" data-sticky="data-sticky">
                 {/* Container */}
-                <div className="container-lg">
+                <div className="container-fluid">
                     {/* Top */}
                     <div className="header-top">
                         {/* Logotipo */}
                         <div className="header-logo">
                             <a href="https://www.gov.br/pt-br">
-                                <img src="img/govbr-logo.png" alt="logo - GOV.BR" />
+                                <img src={LogoGov} alt="logo - GOV.BR" />
                             </a>
                             <span className="br-divider vertical"></span>
                             <div className="header-sign">Ministério da Ciência, Tecnologia e Inovação</div>
@@ -105,7 +107,7 @@ const Header = () => {
                                 {/* Logotipo */}
                                 <div className="menu-title">
                                     <a href="https://www.gov.br/pt-br">
-                                        <img src="img/govbr-logo.png" alt="logo - GOV.BR" />
+                                        <img src={LogoGov} alt="logo - GOV.BR" />
                                     </a>
                                 </div>
 
